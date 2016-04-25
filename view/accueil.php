@@ -1,28 +1,15 @@
-<div class="" style="margin-top:2%; display:inline-block">
-	<table class="tableauAfficheTournois" style="border-collapse: collapse; display:inline-block">
-		<tr >
-			<td style="border: 1px solid black; max-width: 40 %"> Tournois en cours</td>
-			
-		</tr>
-		<!-- Boucle affichant les tournois dans le tableau -->
-		<?php foreach ($listeTournois as $tournoi ){  ?>
-			<tr>
-				<td  style="border: 1px solid black"><a href="index.php?page=tournois&id=<?php echo $tournoi -> getId() ?>" class="tournoisTableau"><?php echo $tournoi->getName() ?></a></td>
-			</tr>
-		<?php  } ?>
+<!-- Boucle affichant les tournois dans le tableau -->
+<?php foreach ($listeTournois as $tournoi ){ ?>
+    <div class="tournoi">
+        <a class="nom_tournoi" href="index.php?page=tournois&id=<?php echo $tournoi -> getId() ?>"><?php echo $tournoi->getName() ?></a><p class="nb_tournoi"><?php echo $tournoi -> getUsers() ?> participants</p><p class="sign_tournoi" style="color: darkred">Inscription terminées !</p>
+        <p class="desc_tournoi"><?php echo $tournoi -> getDesc() ?></p>
+    </div>
+<?php  } ?>
 
-	</table>
-	<table class="tableauAfficheTournois" style="border-collapse: collapse; display:inline-block">
-		<tr >
-			<td style="border: 1px solid black"> Inscription ouvertes </td>
-			
-		</tr>
-		<!-- Boucle affichant les tournois dans le tableau -->
-		<?php foreach ($listeTournoisInscription as $tournoi ){  ?>
-			<tr>
-				<td  style="border: 1px solid black"><a href="index.php?page=inscription&id=<?php echo $tournoi -> getId() ?>" class="tournoisTableau"><?php echo $tournoi->getName() ?></a></td>
-			</tr>
-		<?php  } ?>
-
-	</table>
-</div>
+<!-- Boucle affichant les tournois dans le tableau -->
+<?php foreach ($listeTournoisInscription as $tournoi ){  ?>
+    <div class="tournoi">
+        <a class="nom_tournoi" href="index.php?page=inscription&id=<?php echo $tournoi -> getId() ?>"><?php echo $tournoi->getName() ?></a><p class="nb_tournoi"><?php echo $tournoi -> getUsers() ?> participants</p><p class="sign_tournoi" style="color: darkgreen">Inscription ouvertes !</p>
+        <p class="desc_tournoi"><?php echo $tournoi -> getDesc() ?></p>
+    </div>
+<?php  } ?>

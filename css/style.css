@@ -177,11 +177,23 @@ nav ul{
 }
 /*------- Tableau des tournois -----*/
 
-.tableauAfficheTournois{
-    margin : 0 auto;
+.tournoi{
+    width: 100%;
+    height: 70px;
 
-    display: inline-block;
-    width: 49%;
+    border-bottom: 1px solid gray;
+}
+
+.nom_tournoi, .sign_tournoi, .nb_tournoi{
+    display: inline;
+}
+
+.nb_tournoi{
+    margin-left: 25px;
+}
+
+.nb_tournoi, .sign_tournoi{
+    float: right;
 }
 
 .match {

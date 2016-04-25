@@ -6,5 +6,4 @@
 		array_push($listeTournoisInscription, $tournoi);
 	}
 	include('view/accueil.php');
-
 ?>
