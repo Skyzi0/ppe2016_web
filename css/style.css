@@ -1,0 +1,526 @@
+/* ----- POLICES ----- */
+
+@font-face{
+    font-family: 'Opificio';
+    src: url('fonts/Opificio.ttf');
+}
+
+@font-face{
+    font-family: 'MorningType';
+    src: url('fonts/Morningtype.ttf');
+}
+
+@font-face{
+    font-family: 'Sansation';
+    src: url('fonts/Sansation.ttf');
+}
+
+@font-face{
+    font-family: 'Nova';
+    src: url('fonts/Nova.otf');
+}
+
+
+/* ----- GENERAL ----- */
+
+html{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 16px;
+    font-family: Sansation;
+}
+
+body{
+    margin: 0; padding: 0;
+}
+
+header, footer{
+    box-shadow: 0px 1px 1px 0px gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: #adaaaa;
+}
+
+a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 1px gainsboro;
+    font-family: Sansation;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #790000;
+    font-weight: bold;
+
+    text-shadow: 0px 0px 0px gainsboro;
+}
+
+p{
+    margin: 0; padding: 0;
+}
+
+input[type="submit"], .repondre{
+    margin: 0;
+    line-height: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border: 0;
+
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 15px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background: darkred;
+}
+
+input[type="submit"]:hover, .repondre:hover{
+    cursor: pointer;
+}
+
+
+/* ----- FORMULAIRES ----- */
+
+#register{
+    margin-top: 15px;
+}
+
+#register fieldset{
+    margin-bottom: 15px;
+}
+
+.labReg{
+    display: inline-block;
+    width: 250px;
+    margin: 5px;
+}
+
+.inputReg{
+    display: inline-block;
+    width: 200px;
+}
+
+.regError{
+    margin: 5px;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* ----- EN TETE ----- */
+
+#mainTitle{
+    margin: 15px;
+    font-size: 40px;
+}
+#mainDesc {
+    margin: 15px;
+    padding-left: 15px;
+    
+    font-size: 15px;
+}
+
+
+/* ----- MENUS ----- */
+
+nav{
+    box-shadow: 0px 1px 1px 0px gray;
+    border-top: 1px solid gray;
+    
+    background-color: #b7b4b4;
+}
+
+nav ul{
+    margin: 0; padding: 0;
+}
+
+#left_nav li, #right_nav li{
+    display: inline-block;
+    margin: 10px;
+}
+
+#left_nav, #right_nav{
+    display: inline-block;
+}
+
+#right_nav{
+    float: right;
+}
+
+
+/* ----- PIED DE PAGE ----- */
+
+.m_footer {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#foot_1 {
+    border-right: 1px solid black;
+}
+
+#foot_2 {
+    border-right: 1px solid black;   
+}
+
+#foot_3 {
+    
+}
+/*------- Tableau des tournois -----*/
+
+.tableauAfficheTournois{
+     margin : 0 auto;
+}
+
+.match {
+    margin-top: 5px; margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+.BlocMatch div:hover {
+    color: blue;
+}
+
+
+/* ----- PROFIL ----- */
+
+#profil{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#pHeader{
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+
+    padding: 15px;
+}
+
+#pHeader p, #pHeader img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#profilPublic{
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+}
+
+#profilPublic figure{
+    display: inline-block;
+    text-align: center;
+}
+
+#profilPublic figure img{
+    margin: 5px;
+    box-shadow: 0px 1px 1px 0px gray;
+}
+
+#profilPublic figure figcaption{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+
+#profilPublic #pInfos{
+    padding: 0; margin: 0;
+}
+
+#profilPublic figure, #profilPublic #pInfos{
+    padding: 0; margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#profilPublicBan{
+    padding: 15px;
+    margin-bottom: 15px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+}
+
+#ban{
+    position: absolute;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 60px;
+
+    background: darkred;
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0px 1px 1px 0px gray;
+}
+
+/* ----- MODERATION ----- */
+
+#panMod{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#panMod div{
+    padding: 15px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+}
+
+#nameMod{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px gray;
+}
+
+#editUser{
+
+}
+
+/* ----- 404 ----- */
+
+#error{
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+
+    text-align: center;
+}
+
+/* ----- FORUM ----- */
+
+#forum{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.categorie{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+
+    box-shadow: 0px 1px 1px 0px gray;
+    background-color: #c7c4c4;
+}
+
+.categorie a{
+    width: 100%;
+    padding-left: 25px;
+}
+
+.categorie p {
+    font-style: italic;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+}
+
+#cat{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+
+    border: 1px solid black;
+}
+
+#cat p{
+    margin-bottom: 10px;
+}
+
+#cat .question{
+    margin-left: 15px;
+    padding: 5px;
+
+    border: 1px solid black;
+}
+
+#cat .question p{
+    margin-top: 5px;
+
+    font-style: italic;
+    color: gray;
+}
+
+.repondre{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.repondre:hover{
+    color: antiquewhite;
+}
+
+#textbox{
+    display: none;
+}
+
+#textbox input[type="text"]{
+    width: 100%;
+    height: 150px;
+}
+
+#textbox input[type="submit"]{
+    width: 100%;
+}
+
+.reponse{
+    width: 100%;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.reponse section, .reponse div{
+    border: 1px solid darkslategray;
+}
+
+.reponse section{
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+
+.reponse section figure{
+    margin-top: 15px;
+
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.reponse section figure img{
+    box-shadow: 0px 0px 1px gray;
+}
+
+.reponse section p{
+    margin-top: 3px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Sansation;
+    background-color: lightgrey;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    box-shadow: 0px 0px 1px darkslategray;
+}
+
+.reponse div{
+    height: 200px;
+}
+
+.reponse div p{
+    margin: 15px 15px 0px 165px;
+    text-align: justify;
+}
+
+#main_post{
+    margin: 10px 0px 10px 0px;
+
+    border: 3px solid darkred;
+    border-radius: 0px 10px 0px 0px;
+    box-shadow: 1px 1px 1px darkslategray;
+}
+
+/* ----- SHOP ----- */
+
+.headershop{
+    width: 100%;
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 0px gray;
+    border-radius: 0px 5px 0px 0px;
+    font-family: Sansation;
+}
+
+.headershop p, .headershop form, .headershop a{
+    display: inline-block;
+}
+
+.headershop p{
+    font-weight: bold;
+    font-family: Sansation;
+}
+
+.headershop form{
+    margin: 0; padding:  0;
+    margin-left: 15px;
+}
+
+.headershop a{
+    float: right;
+}
+
+.produit{
+    width: 100%;
+    height: 80px;
+
+    margin-bottom: 7px;
+    margin-top: 7px;
+
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 0px gray;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.t_product {
+    line-height: 30px;
+    margin-left: 80px;
+    padding-left: 15px;
+
+    color: white;
+    background-color: gray;
+    font-family: Sansation;
+}
+
+.price_product{
+    float: right;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.p_product{
+    width: 77px;
+    height: 77px;
+    float: left;
+}
+
+.d_product{
+    margin-left: 15px;
+    width: 800px;
+}
+
+.d_product, .btn_product{
+    display: inline-block;
+}
+
+.btn_product{
+    float: right;
+    margin: 7px 10px 0px 0px;
+}
+
+.btn_product input{
+    width: 50px;
+}
