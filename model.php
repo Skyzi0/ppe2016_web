@@ -1,7 +1,7 @@
 <?php
     function BDDConnexionPDO()
     {
-        $PARAM_hote="192.168.1.17"; //Chemin vers le serveur
+        $PARAM_hote='btsinfo-rousseau53.fr:33017'; //Chemin vers le serveur
         $PARAM_port='33017';
         $PARAM_nom_db='2014-tm_ppe';  //Nom de la base de donnée
         $PARAM_utilisateur='2014-tm';  //Nom d'utilisateur pour se connecter à la base de donnée
