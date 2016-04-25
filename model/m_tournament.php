@@ -13,7 +13,7 @@
         $listTour = new Collection(); // Collection de Tournois
         
         while($donnees = $ex -> fetch(PDO::FETCH_ASSOC)){ // Créations d'Objets Tournois et Ajout à la liste de Tournois
-            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']));
+            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']), $donnees['description']);
             $listTour -> ajouter($tournoi);
         }
         return $listTour -> getCollection();
@@ -26,7 +26,7 @@
         $ex = $GLOBALS['connexion'] -> query($req);
         
         $donnees = $ex -> fetch(PDO::FETCH_ASSOC);
-        $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']));
+        $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']), $donnees['description']);
         
         return $tournoi;
     }
@@ -39,7 +39,7 @@
         $listTour = new Collection(); // Collection de Tournois
         
         while($donnees = $ex -> fetch(PDO::FETCH_ASSOC)){ // Créations d'Objets Tournois et Ajout à la liste de Tournois
-            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']));
+            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']), $donnees['description']);
             $listTour -> ajouter($tournoi);
         }
         return $listTour -> getCollection();
@@ -52,7 +52,7 @@
         $listTour = new Collection(); // Collection de Tournois
         
         while($donnees = $ex -> fetch(PDO::FETCH_ASSOC)){ // Créations d'Objets Tournois et Ajout à la liste de Tournois
-            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']));
+            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']), $donnees['description']);
             $listTour -> ajouter($tournoi);
         }
         return $listTour -> getCollection();
@@ -65,7 +65,7 @@
         $listTour = new Collection(); // Collection de Tournois
         
         while($donnees = $ex -> fetch(PDO::FETCH_ASSOC)){ // Créations d'Objets Tournois et Ajout à la liste de Tournois
-            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']));
+            $tournoi = new Tournoi($donnees['idTournoi'], $donnees['nomTournoi'], $donnees['nombreParticipantMax'], getMatchsByTournament($donnees['idTournoi']), $donnees['description']);
             $listTour -> ajouter($tournoi);
         }
         return $listTour -> getCollection();

@@ -1,4 +1,3 @@
-<h1>Inscription</h1>
 <form method="post" action="index.php?page=user&user=signup" id="register">
     <fieldset><legend>Identifiants</legend>
     <label class="regError"><?php echo $error ?></label><br />

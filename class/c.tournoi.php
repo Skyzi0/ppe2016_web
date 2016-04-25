@@ -6,12 +6,14 @@ class Tournoi{
     private $nameT;
     private $usersT;
     private $listMatchT;
+    private $descT;
     
-    public function __construct($id, $name, $users, $listMatch){
+    public function __construct($id, $name, $users, $listMatch, $desc){
         $this -> idT = $id;
         $this -> nameT = $name;
         $this -> usersT = $users;
         $this -> listMatchT = $listMatch;
+        $this -> descT = $desc;
     }
     
     function getId(){
@@ -28,6 +30,10 @@ class Tournoi{
     
     function getListMatch(){
         return $this -> listMatchT;   
+    }
+
+    function getDesc(){
+        return $this -> descT;
     }
 }
 ?>

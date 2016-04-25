@@ -13,11 +13,7 @@
         </select>
         <button type="submit">Rechercher</button>
     </form>
-    <?php
-        if($return){
-            echo "<a href='index.php?page=shop'>Retourner à la Boutique</a>";
-        }
-    ?>
+
     <a>Accéder à mon panier</a>
 </div>
 

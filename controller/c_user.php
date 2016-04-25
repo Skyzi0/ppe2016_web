@@ -10,7 +10,6 @@
         }
     }
     function register(){
-        require_once('model/m_user.php');
         if(isset($_SESSION['id'])){
             getProfil();
         }
@@ -51,9 +50,8 @@
         }
     }
 
-    function checkLogin()
-    {
-        include("model/m_user.php");
+    function checkLogin(){
+        require_once("model/m_user.php");
         if ($_POST['pseudo'] = null || $_POST['pass'] = null) {
             $error = "pseudo ou mot de passe vide , veuillez indiquer ces informations";
             include("view/login.php");
@@ -85,7 +83,6 @@
     }
     
     function getProfil(){
-        require_once('model/m_user.php');
         if(isset($_SESSION['id'])){
             $pseudo = $_SESSION['pseudo'];
             $avatar = $_SESSION['avatar'];
@@ -96,7 +93,6 @@
         }
     }
     function modifProfil(){
-    	include("model/m_user.php");
     	$error = null;
         if ($_POST['mail'] != null) {
             $mail = $_POST['mail'];

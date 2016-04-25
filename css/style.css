@@ -178,7 +178,10 @@ nav ul{
 /*------- Tableau des tournois -----*/
 
 .tableauAfficheTournois{
-     margin : 0 auto;
+    margin : 0 auto;
+
+    display: inline-block;
+    width: 49%;
 }
 
 .match {
@@ -255,8 +258,8 @@ nav ul{
 
 #ban{
     position: absolute;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 12px;
+    padding-right: 14px;
     margin-top: 60px;
 
     background: darkred;
